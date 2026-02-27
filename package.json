@@ -1,0 +1,24 @@
+{
+  "name": "alden-demo",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev:server": "node --env-file=.env server.js",
+    "dev:client": "vite",
+    "dev": "concurrently \"npm run dev:server\" \"npm run dev:client\"",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "twilio": "^4.23.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.2.1",
+    "concurrently": "^8.2.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "vite": "^5.1.0"
+  }
+}
